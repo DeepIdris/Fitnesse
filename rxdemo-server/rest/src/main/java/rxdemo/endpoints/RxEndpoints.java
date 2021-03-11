@@ -19,6 +19,8 @@ public class RxEndpoints {
 
       Gson gson = new Gson();
 
+      // new api endpoint
+
       // an api call
       post("/rx", (request, response) -> {
          ValidatePrescriptionCommand command = new ValidatePrescriptionCommand(RxValidator.getDefaultValidator());
